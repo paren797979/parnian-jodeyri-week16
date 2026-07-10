@@ -1,0 +1,57 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: "Yekan Bakh";
+  color: rgba(0, 0, 0, 1);
+}
+
+.toursSection {
+  width: 100%;
+}
+
+.toursGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+  row-gap: 30px;
+  align-items: stretch;
+}
+
+.noData {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  color: #888;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .toursGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .toursGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .toursGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .container h2 {
+    font-size: 20px;
+  }
+}

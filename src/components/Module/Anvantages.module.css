@@ -1,0 +1,107 @@
+.advantagesSection {
+  width: 100%;
+  padding: 24px 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 24px;
+  font-family: "Vazirmatn";
+}
+
+.positives {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  direction: rtl;
+  flex: 1;
+  min-width: 0;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+}
+
+.textBox h3 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 500;
+  color: rgba(40, 40, 40, 1);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.textBox p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #7a7a7a;
+  line-height: 1.9;
+  max-width: 260px;
+}
+
+
+@media (max-width: 992px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .positives {
+    flex: 0 0 calc(50% - 12px);
+  }
+
+  .textBox p {
+    max-width: 320px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .advantagesSection {
+    padding: 18px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .positives {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .textBox h3 {
+    font-size: 16px;
+  }
+
+  .textBox p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+}
+

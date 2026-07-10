@@ -1,0 +1,270 @@
+.section {
+  direction: rtl;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+   font-family: "Vazirmatn",sans-serif;
+}
+
+.title {
+  color: #282828;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: -65px;
+  font-size: 36px;
+  font-weight: 800;
+  display: flex;
+}
+
+.title div {
+  width: 59px;
+  height: 59px;
+  background: linear-gradient(to top, rgba(16, 65, 27, 1), rgba(40, 167, 69, 1));
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.title h2,
+.title h2 span {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(40, 40, 40, 1);
+}
+
+.title h2 span {
+  color: rgba(40, 167, 69, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imageBox {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  flex-shrink: 0;
+  transform: translateX(115px);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+
+.image[data-diff="0"] {
+  transform: translateX(0px) scale(1);
+  opacity: 1;
+}
+
+.image[data-diff="1"] {
+  transform: translateX(-60px) scale(0.95);
+  opacity: 0.8;
+}
+
+.image[data-diff="2"] {
+  transform: translateX(-120px) scale(0.9);
+  opacity: 0.6;
+}
+
+.image[data-diff="3"] {
+  transform: translateX(-173px) scale(0.85);
+  opacity: 0.4;
+}
+
+.controlsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  transform: translateX(115px);
+  direction: ltr;
+}
+
+.arrowBtn {
+  background: none;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.arrowBtn:hover {
+  background-color: #f0f0f0;
+}
+
+.counter {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.textBox {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cardTitle {
+  font-size: 36px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 16px;
+}
+
+.cardText {
+  width: 517px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+  line-height: 2.2;
+  text-align: justify;
+  font-family: "A-Iranian-Sans";;
+}
+
+
+@media (max-width: 992px) {
+  .section {
+    padding: 40px 16px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .title h2,
+  .title h2 span {
+    font-size: 28px;
+  }
+
+  .title div {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .carouselContainer {
+    width: 100%;
+    align-items: center;
+  }
+
+ 
+  .imageBox {
+    width: 420px;
+    height: 420px;
+    transform: translateX(0);
+    margin-left: 115px;
+  }
+
+  .controlsWrapper {
+    transform: translateX(0);
+    margin-top: 25px;
+    justify-content: center;
+  }
+
+  .textBox {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 28px;
+  }
+
+  .cardText {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .imageBox {
+    width: 320px;
+    height: 320px;
+    
+  }
+
+  
+  .image[data-diff="0"] {
+    transform: translateX(0px) scale(1);
+    opacity: 1;
+  }
+
+  .image[data-diff="1"] {
+    transform: translateX(-45px) scale(0.95);
+    opacity: 0.8;
+  }
+
+  .image[data-diff="2"] {
+    transform: translateX(-90px) scale(0.9);
+    opacity: 0.6;
+  }
+
+  .image[data-diff="3"] {
+    transform: translateX(-130px) scale(0.85);
+    opacity: 0.4;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+  }
+
+  .cardText {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .controlsWrapper {
+    gap: 18px;
+  }
+
+  .arrowBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .counter {
+    font-size: 16px;
+  }
+}

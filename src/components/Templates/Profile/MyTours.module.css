@@ -1,0 +1,162 @@
+.myTours {
+  width: 100%;
+  direction: rtl;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 13px 20px 20px 20px;
+  font-family: "Yekan Bakh";
+
+}
+
+.card {
+  position: relative;
+  width: 832px;
+  height: 168px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.status ,.finished , .running{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 27px;
+    padding: 8px;
+    width: 89px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.status ,.finished {
+    color: rgba(40, 167, 69, 1);
+    background-color: rgba(40, 167, 69, 0.3);
+}
+
+
+.running {
+  color: rgba(209, 185, 0, 1);
+  background-color: rgba(209, 185, 0, 0.3);
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 180px;
+  padding: 24px 28px 10px;
+}
+
+.tourTitle , .vehicle{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-items: center;
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tourTitle h3 {
+ color: rgba(0, 0, 0, 1);
+ font-size: 14px;
+ font-weight: 400;
+}
+
+.tourTitle svg{
+  width: 19px;
+  height: 19px;
+}
+
+.vehicle svg {
+  width: 19px;
+  height: 19px;
+  color: #444;
+  transform: rotate(-140deg);
+  -webkit-transform: rotate(-140deg);
+  -moz-transform: rotate(-140deg);
+  -ms-transform: rotate(-140deg);
+  -o-transform: rotate(-140deg);
+}
+
+.routeSection {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 12px 28px 28px;
+  color: #666;
+  font-size: 15px;
+}
+
+.routeSection p {
+  margin: 0;
+  margin-left: 8px;
+
+}
+
+.routeSection strong {
+color: rgba(0, 0, 0, 1);
+font-size: 14px;
+font-weight: 600;
+}
+
+.routeSection p span , .infoItem span {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bottomSection {
+  border-top: 1px solid #00000026;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  gap: 26px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.infoItem strong {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.infoItem small {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background:rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.emptyBox {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #0000001f;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  color: #555;
+}

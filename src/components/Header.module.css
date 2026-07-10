@@ -1,0 +1,348 @@
+.header {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 75px;
+  overflow: visible;
+  font-family: "Yekan Bakh", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  min-width: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logoImage {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 138px;
+  max-height: 73px;
+  object-fit: contain;
+}
+
+.hamburgerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #282828;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.nav {
+  display: none;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: rgba(40, 40, 40, 1);
+  font-size: 16px;
+}
+
+.navList li:first-child a {
+  color: rgba(40, 167, 69, 1);
+  font-weight: 600;
+}
+
+.mobileNav {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 260px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: right 0.3s ease;
+  padding: 80px 24px 20px 24px;
+  box-sizing: border-box;
+}
+
+.mobileNavOpen {
+  right: 0;
+}
+
+.mobileNavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  direction: rtl;
+}
+
+.mobileNavList li a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.activeMobileLink {
+  color: #28a745 !important;
+  font-weight: 700;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.loginBtn {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: rgb(40, 167, 69);
+  outline: none;
+  border: 1px solid rgb(40, 167, 69);
+  border-radius: 8px;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 160ms ease-in;
+  font: inherit;
+}
+
+.loginBtn span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  font-family: inherit;
+}
+
+.loginIcon {
+  font-size: 14px;
+}
+
+.loginBtn:hover {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.leftSection ul {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 200;
+}
+
+.leftSection ul li {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.leftSection ul li:hover {
+  background-color: #f4f4f4;
+}
+
+.leftSection ul li:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.leftSection ul li a,
+.leftSection ul li > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.userPhoneNumber,
+.userInfo,
+.userLogout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.userPhoneNumber div,
+.userInfo div,
+.userLogout div {
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.userPhoneNumber span {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.userInfo span,
+.userLogout span {
+  font-family: inherit;
+}
+
+.userPhoneNumber div {
+  background-color: rgba(105, 105, 105, 0.488);
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+}
+
+.userPhoneNumber svg,
+.userInfo svg {
+  color: rgba(105, 105, 105, 1);
+}
+
+.userLogout svg {
+  color: rgba(212, 0, 0, 1);
+}
+
+.userPhoneNumber span {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(16, 65, 27, 1);
+}
+
+.userInfo span {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}
+
+.userLogout span {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(212, 0, 0, 1);
+}
+
+.userTrigger {
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  display: flex;
+  background-color: inherit;
+  height: 40px;
+  gap: 9px;
+  color: rgb(40, 167, 69);
+  cursor: pointer;
+  font: inherit;
+}
+
+.userTriggerText {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.userTrigger svg {
+  color: rgb(40, 167, 69);
+}
+
+@media (min-width: 768px) {
+  .hamburgerBtn {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .loginBtn {
+    width: 166px;
+    height: 44px;
+  }
+
+  .loginBtn span {
+    font-size: 16px;
+  }
+
+  .userTrigger {
+    width: 188px;
+    height: 44px;
+  }
+
+  .logoImage {
+    max-width: 146px;
+    max-height: 40px;
+  }
+}

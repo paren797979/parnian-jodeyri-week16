@@ -1,0 +1,208 @@
+.container {
+  width: 1172px;
+  height: 228px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  margin: 49px auto 298px auto;
+}
+
+.checkout_section{
+  height: 562px;
+  width: 100%;
+  background-color: rgb(250, 247, 247);
+}
+
+.checkout_wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 24px;
+  direction: rtl;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.right_part {
+  padding: 21px 17px 34px 29px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 865px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidde;
+}
+
+.user_tourInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user_tourInfo h2, .tour_info h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 18px;
+  gap: 17px;
+}
+
+.inputs input, .select_gender, .birth_input {
+  width: 264px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 14px 8px 14px 0;
+  outline: none;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.select_gender {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.left_part {
+  width: 307px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+
+.tour_info, .final_price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 12px 5px 12px 5px;
+  gap: 95px;
+}
+
+.tour_info {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+  font-family: "Yekan Bakh";
+}
+
+.tour_info span, .final_price p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(40, 40, 40, 1);
+}
+
+.final_price {
+  height: 83px;
+  font-family: "Vazirmatn";
+}
+
+.final_price span {
+  color: rgba(0, 158, 202, 1);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.final_price span:nth-child(1){
+  color: rgba(0, 0, 0, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.left_part button {
+  background-color: rgba(40, 167, 69, 1);
+  width: 283px;
+  height: 56px;
+  border-radius: 10px;
+  margin: 0px 12px 12px 12px;
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  font-family: "Vazirmatn";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.input_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.fake_placeholder {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #7d7d7d;
+  pointer-events: none;
+  z-index: 2;
+  font-size: 14px;
+}
+
+.placeholder_icon {
+  font-size: 18px;
+}
+
+.birth_input {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  padding-right: 14px;
+}
+
+
+@media (max-width: 992px) {
+  .checkout_wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 95%; 
+    margin: 20px auto;
+  }
+
+  .right_part, .left_part {
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .inputs {
+    grid-template-columns: 1fr; 
+  }
+
+  .inputs input, .select_gender, .birth_input {
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .left_part button {
+    width: calc(100% - 24px); 
+    margin: 12px;
+  }
+}

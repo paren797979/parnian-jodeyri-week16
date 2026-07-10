@@ -1,0 +1,157 @@
+.account_Info {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: "Yekan Bakh";
+}
+
+.user_phone{
+  display: flex;
+  justify-content: space-between;
+  /* gap: 32px; */
+  align-items: center;
+}
+.number{
+  font-family: "Vazirmatn";
+  margin-right: 32px;
+}
+
+.section_title {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row{
+   justify-content: space-between;
+    gap: 12px;
+    display: flex;
+}
+
+.block {
+  padding: 16px 0;
+}
+
+.block + .block {
+  border-top: 1px solid #e6e8ec;
+}
+
+.rowContent {
+  justify-content: space-between;
+  gap: 12px;
+  display: flex;
+}
+
+.label {
+  color: #6b7280;
+  font-size: 14px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.value {
+  color: #111827;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.add_btn,
+.edit_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  color: #27a2d5;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0;
+  flex: 0 0 auto;
+  font-size: 13px;
+}
+
+.email_input {
+ /* box-sizing: border-box; */
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    outline: none;
+    flex: auto;
+    padding: 11.5px 3px 11.5px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.confirm_btn {
+    cursor: pointer;
+    white-space: nowrap;
+    background: rgba(40, 167, 69, 1);
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    gap: 4px;
+    height: 45px;
+    padding: 0 14px;
+    /* display: inline-flex; */
+    width: 122px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cancel_btn {
+    cursor: pointer;
+    white-space: nowrap;
+    color: rgba(40, 167, 69, 1);
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    gap: 4px;
+    height: 45px;
+    padding: 0 14px;
+    width: 122px;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgba(40, 167, 69, 1);;
+}
+
+.edit_link {
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.subSection {
+  padding: 12px 0;
+}
+
+.divider {
+  height: 1px;
+  background: #e6e8ec;
+}
+
+@media (max-width: 640px) {
+  .account_Info {
+    padding: 16px;
+  }
+
+  .email_input,
+  .confirm_btn,
+  .cancel_btn {
+    width: 100%;
+  }
+
+  .edit_link {
+    width: fit-content;
+  }
+}

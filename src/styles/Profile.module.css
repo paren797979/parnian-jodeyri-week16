@@ -1,0 +1,29 @@
+.profile_container {
+  gap: 18px;
+  display: flex;
+  margin: 36px 126px 218px 140px;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+.sidebar_wrapper {
+  flex: 1; 
+  max-width: 280px;
+}
+
+.main_content {
+  flex: 3; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column;
+  }
+  
+  .sidebarWrapper {
+    max-width: 100%;
+  }
+}

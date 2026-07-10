@@ -1,0 +1,201 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  font-family: "Yekan Bakh";
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 28px;
+  font-size: 28px;
+  color: rgb(89, 89, 89);
+}
+
+.title span {
+  color: rgba(40, 167, 69, 1);
+  margin-left: 8px;
+}
+
+.main_boxes {
+  direction: rtl;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 874px;
+  height: 71px;
+  padding: 15px 18px 15px 10px;
+  box-sizing: border-box;
+}
+
+.input_wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  position: relative;
+}
+
+.input_wrapper input {
+  font-family: inherit;
+  outline: none;
+  color: rgb(44, 44, 44);
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+
+.input_wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+.input_wrapper input[type="date"]:not(.hasValue)::-webkit-datetime-edit {
+  color: transparent !important;
+}
+
+.input_wrapper input[type="text"][placeholder="تاریخ"]::after,
+.input_wrapper input[type="date"]:not(.hasValue)::after {
+  content: "تاریخ";
+  position: absolute;
+  right: 30px; 
+  color: #888;
+  pointer-events: none;
+}
+
+.icon {
+  font-size: 22px;
+  color: #888;
+  flex-shrink: 0;
+}
+
+.divider {
+  width: 1px;
+  height: 35px;
+  background-color: #eee;
+}
+
+.search_button {
+  cursor: pointer;
+  background-color: #28a745;
+  border: none;
+  border-radius: 16px;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 190px;
+  height: 51px;
+  color: rgb(255, 255, 255);
+}
+
+.search_button:hover {
+  background-color: #218838;
+}
+
+.select_input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #2b2b2b;
+  direction: rtl;
+  appearance: none;
+  cursor: pointer;
+}
+
+.hasValue{
+  color: rgba(44, 44, 44, 1);
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  .title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #28a745 !important;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  .title span {
+    color: #28a745 !important;
+    margin-left: 4px;
+  }
+
+  
+  .main_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+  }
+
+
+  .input_wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: #fff;
+    height: 50px;
+    padding: 0 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  }
+
+  .input_wrapper input {
+    font-size: 14px;
+  }
+
+  .select_input {
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  
+  .main_boxes > div:nth-of-type(3) {
+    grid-column: span 2;
+  }
+
+  
+  .input_wrapper input[type="text"][placeholder="تاریخ"]::after,
+  .input_wrapper input[type="date"]:not(.hasValue)::after {
+    right: 42px;
+    font-size: 14px;
+  }
+
+  
+  .divider {
+    display: none !important;
+  }
+
+  
+  .search_button {
+    grid-column: span 2;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+}

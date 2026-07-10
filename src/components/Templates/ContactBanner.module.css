@@ -1,0 +1,160 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    width: 100%;
+    max-width: 1188px;
+    height: auto; 
+    margin: 109px auto 102px auto;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.phone_shopping {
+    background-color: rgba(40, 167, 69, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.cartoonImg {
+    height: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.titles p {
+    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    font-family: "Yekan Bakh",sans-serif;
+}
+
+.text1 {
+   color: rgba(16, 65, 27, 1); 
+   
+  }
+.text2 { 
+  color: white; font-weight: 400; font-size: 32px;
+   font-family: "Yekan Bakh",sans-serif
+ }
+
+.more_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.phone_number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.phone_number span {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Vazirmatn" , sans-serif;
+}
+
+.more_info button {
+    background-color: rgba(16, 65, 27, 1);
+    width: 175px;
+    height: 41px;
+    font-size: 16px;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+    font-family: "Vazirmatn" , sans-serif;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    overflow: visible !important;
+    border-radius: 14px;
+  }
+
+  .phone_shopping {
+    position: relative;
+    overflow: visible !important;
+    min-height: 170px;
+    padding: 18px 16px 0 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .cartoonImg {
+   object-fit: contain;
+    z-index: 5;
+    pointer-events: none;
+    width: 300px;
+    height: 365px;
+    max-height: none;
+    position: absolute;
+    top: -124px;
+    left: 8px;
+    bottom: 0;
+    height: 150px;
+  }
+
+  .titles {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: right;
+    padding-right: 120px;
+    padding-top: 10px;
+  }
+
+  .titles p {
+    margin-bottom: 6px;
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .text2 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .more_info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .phone_number {
+    margin-bottom: 0;
+    gap: 8px;
+    flex-direction: row-reverse; /* آیکن و شماره مثل تصویر */
+  }
+
+  .phone_number span {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .phone_number svg {
+    font-size: 18px;
+  }
+
+  .more_info button {
+    width: auto;
+    min-width: 118px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    border-radius: 9px;
+    white-space: nowrap;
+  }
+}

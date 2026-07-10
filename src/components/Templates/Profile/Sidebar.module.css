@@ -1,0 +1,65 @@
+.sidebar {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  min-height: 170px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+  font-family: "Yekan Bakh";
+}
+
+.userInfo {
+ border-bottom: 1px solid #f3f4f6;
+ align-items: center;
+ gap: 12px;
+ padding: 12px 6px 8px 0;
+ background-color: rgba(40, 167, 69, 0.25);
+ display: flex;
+ height: 59px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.userInfo svg {
+  width: 20px;
+  height: 20px;
+  color: rgba(40, 167, 69, 1);
+}
+
+.userName {
+  font-weight: 400;
+  color:rgba(40, 167, 69, 1);
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.menu a {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu a:nth-child(1){
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu a span{
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(40, 40, 40, 1);
+}
+
+
